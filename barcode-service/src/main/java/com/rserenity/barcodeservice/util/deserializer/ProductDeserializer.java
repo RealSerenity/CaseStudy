@@ -45,15 +45,4 @@ public class ProductDeserializer implements Deserializer<BarcodesRequest> {
     public void close() {
     }
 
-
-
-//    @Override
-//    public BarcodesRequest deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException, JacksonException {
-//
-//        JsonNode node = jsonParser.getCodec().readTree(jsonParser);
-//        Long productId = (Long) ((Long) node.get("productId").numberValue());
-//        String barcodeType = node.get("barcodeType").asText();
-//        int count = (Integer) ((IntNode) node.get("count")).numberValue();
-//        return new BarcodesRequest(productId, barcodeType, count);
-//    }
 }

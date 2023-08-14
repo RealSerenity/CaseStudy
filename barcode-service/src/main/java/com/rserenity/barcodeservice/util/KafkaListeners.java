@@ -41,9 +41,3 @@ public class KafkaListeners
     }
 
 }
-
-//            try {
-//                Thread.sleep(400);
-//            } catch (InterruptedException e) {
-//                throw new RuntimeException(e);
-//            }

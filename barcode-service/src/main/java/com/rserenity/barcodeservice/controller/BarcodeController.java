@@ -15,8 +15,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 
-import static com.rserenity.barcodeservice.constants.MessageConstants.BARCODE_DOESNT_EXIST;
-
 @RestController
 @RequestMapping("/api/barcodes")
 @CrossOrigin(origins = "http://localhost:8080")

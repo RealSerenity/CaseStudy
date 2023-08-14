@@ -35,8 +35,6 @@ public class BarcodeServicesImpl implements BarcodeServices {
         entityList.forEach(productEntity -> dtos.add(entityToDto(productEntity)));
         return dtos;
     }
-
-    // Todo :: önceden responseentity ile bad request döndürüyordum şimdi nasıl bir uyarı döndürebilirim
     @Override
     //@Transactional(propagation = Propagation.NOT_SUPPORTED) // calls works independently
     // NEVER  throws exception if there is an active transaction
@@ -106,22 +104,6 @@ public class BarcodeServicesImpl implements BarcodeServices {
         return barcodeTypes;
     }
 
-
-/*
-
- @Override
- public ResponseEntity<BarcodeDto> updateById(String barcode, Long productId, String barcodeType) {
-     if(!barcodeGenerator.checkBarcodeTypeIsOkey(productId, BarcodeType.getBarcodeType(barcodeType))){
-         return ResponseEntity.badRequest().header("BarcodeTypeError","Uygun olmayan barkod tipi").
-                 body(BarcodeDto.builder().productId(productId).barcodeType(BarcodeType.getBarcodeType(barcodeType)).build());
-     }
-     BarcodeEntity entity = findBarcode(barcode);
-     entity.setBarcodeType(BarcodeType.getBarcodeType(barcodeType));
-     entity.setProductId(productId);
-     entity = barcodeRepository.save(entity);
-     return ResponseEntity.ok(entityToDto(entity));
- }
-*/
 
     @Override
     public BarcodeDto getByBarcode(String barcode) {
