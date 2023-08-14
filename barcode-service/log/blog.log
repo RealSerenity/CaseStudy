@@ -1,0 +1,376 @@
+2023-07-27T15:05:28.261+03:00  INFO 19788 --- [restartedMain] c.r.b.BarcodeServiceApplication          : Starting BarcodeServiceApplication using Java 17.0.7 with PID 19788 (C:\Users\melih\IdeaProjects\CaseStudy\barcode-service\target\classes started by melih in C:\Users\melih\IdeaProjects\CaseStudy\barcode-service)
+2023-07-27T15:05:28.267+03:00  INFO 19788 --- [restartedMain] c.r.b.BarcodeServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-27T15:05:28.334+03:00  INFO 19788 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-27T15:05:28.335+03:00  INFO 19788 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-27T15:05:29.222+03:00  INFO 19788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-27T15:05:29.292+03:00  INFO 19788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+2023-07-27T15:05:29.538+03:00  INFO 19788 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f7e21be3-e0fe-3329-bff7-e4f2827bd8bc
+2023-07-27T15:05:29.609+03:00  INFO 19788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.rserenity.barcodeservice.util.CategoryServiceUtil' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-27T15:05:29.611+03:00  INFO 19788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.rserenity.barcodeservice.util.ProductServiceUtil' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-27T15:05:30.233+03:00  INFO 19788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-27T15:05:30.244+03:00  INFO 19788 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-27T15:05:30.245+03:00  INFO 19788 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-27T15:05:30.325+03:00  INFO 19788 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-27T15:05:30.325+03:00  INFO 19788 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1990 ms
+2023-07-27T15:05:30.366+03:00  INFO 19788 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-27T15:05:30.660+03:00  INFO 19788 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/barcodeDB user=ROOT
+2023-07-27T15:05:30.662+03:00  INFO 19788 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-27T15:05:30.676+03:00  INFO 19788 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/barcodeDB'
+2023-07-27T15:05:30.872+03:00  INFO 19788 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-27T15:05:30.937+03:00  INFO 19788 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-27T15:05:30.941+03:00  INFO 19788 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-27T15:05:31.115+03:00  INFO 19788 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-27T15:05:31.276+03:00  INFO 19788 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-27T15:05:31.581+03:00  INFO 19788 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-27T15:05:32.186+03:00  INFO 19788 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-27T15:05:32.235+03:00  INFO 19788 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-27T15:05:32.330+03:00  WARN 19788 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-27T15:05:32.379+03:00  WARN 19788 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-07-27T15:05:33.446+03:00  INFO 19788 --- [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-07-27T15:05:33.537+03:00  INFO 19788 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
+2023-07-27T15:05:33.537+03:00  INFO 19788 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
+2023-07-27T15:05:33.537+03:00  INFO 19788 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1690459533535
+2023-07-27T15:05:34.066+03:00  INFO 19788 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2023-07-27T15:05:34.072+03:00  INFO 19788 --- [kafka-admin-client-thread | adminclient-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2023-07-27T15:05:34.073+03:00  INFO 19788 --- [kafka-admin-client-thread | adminclient-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-07-27T15:05:34.073+03:00  INFO 19788 --- [kafka-admin-client-thread | adminclient-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2023-07-27T15:05:34.097+03:00  INFO 19788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-27T15:05:34.253+03:00  INFO 19788 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-barcode_listener_1-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = barcode_listener_1
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-07-27T15:05:34.320+03:00  INFO 19788 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
+2023-07-27T15:05:34.320+03:00  INFO 19788 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
+2023-07-27T15:05:34.320+03:00  INFO 19788 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1690459534320
+2023-07-27T15:05:34.323+03:00  INFO 19788 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Subscribed to topic(s): create_barcodes
+2023-07-27T15:05:34.334+03:00  INFO 19788 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-barcode_listener_2-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = barcode_listener_2
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-07-27T15:05:34.343+03:00  INFO 19788 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
+2023-07-27T15:05:34.344+03:00  INFO 19788 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
+2023-07-27T15:05:34.344+03:00  INFO 19788 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1690459534343
+2023-07-27T15:05:34.344+03:00  INFO 19788 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Subscribed to topic(s): barcode_test
+2023-07-27T15:05:34.357+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Cluster ID: 7saPgq2mSHur3BeuKtcvsg
+2023-07-27T15:05:34.357+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Cluster ID: 7saPgq2mSHur3BeuKtcvsg
+2023-07-27T15:05:34.358+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2023-07-27T15:05:34.358+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2023-07-27T15:05:34.361+03:00  INFO 19788 --- [restartedMain] c.r.b.BarcodeServiceApplication          : Started BarcodeServiceApplication in 6.89 seconds (process running for 7.815)
+2023-07-27T15:05:34.363+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] (Re-)joining group
+2023-07-27T15:05:34.363+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] (Re-)joining group
+2023-07-27T15:05:34.389+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Request joining group due to: need to re-join with the given member-id: consumer-barcode_listener_1-1-f1b63894-766c-4369-a7cb-634131d1704c
+2023-07-27T15:05:34.389+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Request joining group due to: need to re-join with the given member-id: consumer-barcode_listener_2-2-10014da9-5fc6-4b3d-a680-2a92bf856842
+2023-07-27T15:05:34.390+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2023-07-27T15:05:34.390+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2023-07-27T15:05:34.390+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] (Re-)joining group
+2023-07-27T15:05:34.390+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] (Re-)joining group
+2023-07-27T15:05:34.408+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Successfully joined group with generation Generation{generationId=297, memberId='consumer-barcode_listener_2-2-10014da9-5fc6-4b3d-a680-2a92bf856842', protocol='range'}
+2023-07-27T15:05:34.411+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Successfully joined group with generation Generation{generationId=305, memberId='consumer-barcode_listener_1-1-f1b63894-766c-4369-a7cb-634131d1704c', protocol='range'}
+2023-07-27T15:05:34.412+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Finished assignment for group at generation 297: {consumer-barcode_listener_2-2-10014da9-5fc6-4b3d-a680-2a92bf856842=Assignment(partitions=[barcode_test-0])}
+2023-07-27T15:05:34.412+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Finished assignment for group at generation 305: {consumer-barcode_listener_1-1-f1b63894-766c-4369-a7cb-634131d1704c=Assignment(partitions=[create_barcodes-0])}
+2023-07-27T15:05:34.459+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Successfully synced group in generation Generation{generationId=297, memberId='consumer-barcode_listener_2-2-10014da9-5fc6-4b3d-a680-2a92bf856842', protocol='range'}
+2023-07-27T15:05:34.460+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Notifying assignor about the new Assignment(partitions=[barcode_test-0])
+2023-07-27T15:05:34.463+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Successfully synced group in generation Generation{generationId=305, memberId='consumer-barcode_listener_1-1-f1b63894-766c-4369-a7cb-634131d1704c', protocol='range'}
+2023-07-27T15:05:34.464+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Notifying assignor about the new Assignment(partitions=[create_barcodes-0])
+2023-07-27T15:05:34.468+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Adding newly assigned partitions: barcode_test-0
+2023-07-27T15:05:34.468+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Adding newly assigned partitions: create_barcodes-0
+2023-07-27T15:05:34.537+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Setting offset for partition create_barcodes-0 to the committed offset FetchPosition{offset=149, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2023-07-27T15:05:34.537+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Setting offset for partition barcode_test-0 to the committed offset FetchPosition{offset=5, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2023-07-27T15:05:34.643+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : barcode_listener_1: partitions assigned: [create_barcodes-0]
+2023-07-27T15:05:34.643+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : barcode_listener_2: partitions assigned: [barcode_test-0]
+2023-07-27T15:14:34.577+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Node -1 disconnected.
+2023-07-27T15:14:34.751+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Node -1 disconnected.
+2023-07-27T15:25:24.897+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Node 1 disconnected.
+2023-07-27T15:25:24.897+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Node 2147483646 disconnected.
+2023-07-27T15:25:24.898+03:00  INFO 19788 --- [kafka-coordinator-heartbeat-thread | barcode_listener_1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Node 1 disconnected.
+2023-07-27T15:25:24.898+03:00  INFO 19788 --- [kafka-coordinator-heartbeat-thread | barcode_listener_1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Cancelled in-flight FETCH request with correlation id 2761 due to node 1 being disconnected (elapsed time since creation: 201ms, elapsed time since send: 201ms, request timeout: 30000ms)
+2023-07-27T15:25:24.898+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Cancelled in-flight FETCH request with correlation id 2774 due to node 1 being disconnected (elapsed time since creation: 200ms, elapsed time since send: 200ms, request timeout: 30000ms)
+2023-07-27T15:25:24.898+03:00  INFO 19788 --- [kafka-coordinator-heartbeat-thread | barcode_listener_1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Cancelled in-flight METADATA request with correlation id 2762 due to node 1 being disconnected (elapsed time since creation: 101ms, elapsed time since send: 101ms, request timeout: 30000ms)
+2023-07-27T15:25:24.899+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Node 2147483646 disconnected.
+2023-07-27T15:25:24.900+03:00  INFO 19788 --- [kafka-coordinator-heartbeat-thread | barcode_listener_2] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: true. Rediscovery will be attempted.
+2023-07-27T15:25:24.900+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Error sending fetch request (sessionId=1978833330, epoch=2365) to node 1:
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+2023-07-27T15:25:24.900+03:00  INFO 19788 --- [kafka-coordinator-heartbeat-thread | barcode_listener_1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Error sending fetch request (sessionId=1762202177, epoch=2351) to node 1:
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+2023-07-27T15:25:24.911+03:00  INFO 19788 --- [kafka-coordinator-heartbeat-thread | barcode_listener_1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: true. Rediscovery will be attempted.
+2023-07-27T15:25:30.511+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Revoke previously assigned partitions create_barcodes-0
+2023-07-27T15:25:30.511+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Revoke previously assigned partitions barcode_test-0
+2023-07-27T15:25:30.513+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : barcode_listener_1: partitions revoked: [create_barcodes-0]
+2023-07-27T15:25:30.513+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : barcode_listener_2: partitions revoked: [barcode_test-0]
+2023-07-27T15:25:30.513+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-07-27T15:25:30.513+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-07-27T15:25:30.513+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Request joining group due to: consumer pro-actively leaving the group
+2023-07-27T15:25:30.513+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Request joining group due to: consumer pro-actively leaving the group
+2023-07-27T15:25:30.513+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Unsubscribed all topics or patterns and assigned partitions
+2023-07-27T15:25:30.513+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Unsubscribed all topics or patterns and assigned partitions
+2023-07-27T15:25:30.514+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-07-27T15:25:30.514+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-07-27T15:25:30.514+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_1-1, groupId=barcode_listener_1] Request joining group due to: consumer pro-actively leaving the group
+2023-07-27T15:25:30.514+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-barcode_listener_2-2, groupId=barcode_listener_2] Request joining group due to: consumer pro-actively leaving the group
+2023-07-27T15:25:30.516+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2023-07-27T15:25:30.516+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2023-07-27T15:25:30.516+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-07-27T15:25:30.516+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-07-27T15:25:30.516+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2023-07-27T15:25:30.516+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2023-07-27T15:25:30.519+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-barcode_listener_1-1 unregistered
+2023-07-27T15:25:30.520+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-barcode_listener_2-2 unregistered
+2023-07-27T15:25:30.520+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : barcode_listener_2: Consumer stopped
+2023-07-27T15:25:30.520+03:00  INFO 19788 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : barcode_listener_1: Consumer stopped
+2023-07-27T15:25:30.558+03:00  INFO 19788 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-27T15:25:30.566+03:00  INFO 19788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-27T15:25:30.569+03:00  INFO 19788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
