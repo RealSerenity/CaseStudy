@@ -176,7 +176,6 @@ class ProductServicesImplTest {
         assertThrows(ProductNotFoundException.class, () -> productServices.delete(1L), PRODUCT_DOESNT_EXIST);
     }
 
-    //Todo : Product code update required
     @Test
     void updateById_ShouldUpdate_WhenAllPropsDifference() {
         ProductEntity entity = new ProductEntity(1L,"MEr2a","Elma",2L,2.0,"none", UnitType.Kilogram);
