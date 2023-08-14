@@ -20,7 +20,6 @@ public class CategoryController {
     @GetMapping("/getAllCategories")
     public List<CategoryDto> getAllCategories() {
         return categoryServices.getAll();
-
     }
 
     @PostMapping("/createCategory")
